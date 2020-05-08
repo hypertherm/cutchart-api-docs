@@ -25,9 +25,8 @@ To quickly try out or troubleshoot the API, check out these resources:
 **Requires an API access token* 
 
  ## Support documentation
-Refer to the [Cut Chart API Support documentation](https://stoplight.io/p/docs/gh/hypertherm/cutchart-api/docs/Home.md?srn=gh/hypertherm/cutchart-api/docs/Home.md) for information on additional topics such as:
+Refer to the [Cut Chart API Support documentation](https://stoplight.io/p/docs/gh/hypertherm/cutchart-api/docs/Home.md?srn=gh/hypertherm/cutchart-api/docs/Home.md) for information on topics such as:
+ - custom cut charts and templates
  - authentication
- - custom cut charts
- - templates for custom cut charts
  - API reference information
  - and more! 
