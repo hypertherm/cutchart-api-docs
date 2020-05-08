@@ -10,11 +10,6 @@ To use the Hypertherm Cut Chart API in your application:
 2. Set up [authentication](./Support/authentication.md).
 3. Use the [Open API Specification](../reference/cutchart-api/openapi.yml) to get and customize Hypertherm cut charts on-demand.
 
-## Try out or troubleshoot the API
-To quickly try out or troubleshoot the API, check out these resources:
-- [REST client templates](./Support/test-troubleshoot.md)
-- Interactive [Open API Specification](../reference/cutchart-api/openapi.yml)*
-
 **Requires an API access token* 
 
 ## Featured client applications
@@ -23,6 +18,12 @@ To see the Cut Chart API in action, check out these sample applications:
 
  - **Website:** Download Hypertherm [cut charts online](https://cutchartsapp.z20.web.core.windows.net/).
  - **Command-Line Interface App:** Get and customize cut charts from your command line with the [Cut Chart CLI](https://github.com/hypertherm/cc-cli).
+ 
+## Try out or troubleshoot the API
+To quickly try out or troubleshoot the API, check out these resources:
+- [REST client templates](./Support/test-troubleshoot.md)
+- Interactive [Open API Specification](../reference/cutchart-api/openapi.yml)*
+
  
  ## Support documentation
 Refer to the [Cut Chart API Support documentation](https://stoplight.io/p/docs/gh/hypertherm/cutchart-api/docs/Home.md?srn=gh/hypertherm/cutchart-api/docs/Home.md) for information on additional topics such as:
