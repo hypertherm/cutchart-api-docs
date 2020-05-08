@@ -12,12 +12,12 @@ To use the Hypertherm Cut Chart API in your application:
 
 **Requires an API access token* 
 
-## Featured client applications
+## Example client applications
 
-To see the Cut Chart API in action, check out these sample applications:
+To see the Cut Chart API in action, check out these applications:
 
- - **Website:** Download Hypertherm [cut charts online](https://cutchartsapp.z20.web.core.windows.net/).
  - **Command-Line Interface App:** Get and customize cut charts from your command line with the [Cut Chart CLI](https://github.com/hypertherm/cc-cli).
+  - **Website:** Download Hypertherm [cut charts online](https://cutchartsapp.z20.web.core.windows.net/).
  
 ## Try out or troubleshoot the API
 To quickly try out or troubleshoot the API, check out these resources:
