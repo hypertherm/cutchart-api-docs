@@ -19,7 +19,7 @@ To see the Cut Chart API in action, check out these applications:
  
 ## Try out or troubleshoot the API
 To quickly try out or troubleshoot the API, check out these resources:
-- [REST client templates](./Support/test-troubleshoot.md)
+- [REST client templates](https://stoplight.io/p/docs/gh/hypertherm/cutchart-api/docs/Support/test-troubleshoot.md?srn=gh/hypertherm/cutchart-api/docs/Support/test-troubleshoot.md)
 - Interactive [Open API Specification](https://stoplight.io/p/docs/gh/hypertherm/cutchart-api/reference/cutchart-api/openapi.yml?srn=gh/hypertherm/cutchart-api/reference/cutchart-api/openapi.yml)*
 
 **Requires an API access token* 
