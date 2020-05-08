@@ -7,7 +7,7 @@ Only MAXPRO200 and Powermax105 cut charts are currently supported, but cut chart
 ## Get started
 To use the Hypertherm Cut Chart API in your application:
 1. [Register](https://clientregistration.z20.web.core.windows.net/) your application to get a Client ID.
-2. Set up [authentication](./Support/authentication.md).
+2. Set up [authentication](https://stoplight.io/p/docs/gh/hypertherm/cutchart-api/docs/Support/authentication.md?srn=gh/hypertherm/cutchart-api/docs/Support/authentication.md).
 3. [Call the API](https://stoplight.io/p/docs/gh/hypertherm/cutchart-api/reference/cutchart-api/openapi.yml?srn=gh/hypertherm/cutchart-api/reference/cutchart-api/openapi.yml) to get and customize Hypertherm cut charts on-demand.
 
 ## Example client applications
