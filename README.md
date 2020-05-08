@@ -1,6 +1,6 @@
 # Hypertherm Cut Chart API
 
-Integrate the Hypertherm Cut Chart API into any CNC to give operators access to the latest Hypertherm cut charts. 
+Integrate the Hypertherm Cut Chart API into any application or CNC to give operators access to the latest Hypertherm cut charts. 
 
 Only MAXPRO200 and Powermax105 cut charts are currently supported, but cut charts for more systems will be coming soon.
 
