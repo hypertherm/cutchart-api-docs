@@ -14,7 +14,7 @@ To use the Hypertherm Cut Chart API in your application:
 
 To see the Cut Chart API in action and review sample code, refer to these example client applications:
 
- - **Command-Line Interface App:** Get and customize cut charts from your command line with the [Cut Chart CLI](https://github.com/hypertherm/cc-cli).
+ - **Command-Line Interface App:** Get and customize cut charts from your command line with the [Cut Chart CLI](https://github.com/hypertherm/cutchart-cli).
   - **Website:** Download [Hypertherm cut charts online](https://cutchartsapp.z20.web.core.windows.net/).
 
  ## Troubleshoot the API
