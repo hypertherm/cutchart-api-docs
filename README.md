@@ -28,4 +28,4 @@ Find information about the following topics in the [Cut Chart API Support docume
  - and more! 
 
 ## Supported browsers
-The Cut Chart API supports most popular web browsers. However, Microsoft Internet Explorer is not supported. 
+The Cut Chart API supports most popular web browsers. However, Microsoft<sup>®</sup> Internet Explorer is not supported. 
