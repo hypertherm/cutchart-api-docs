@@ -21,7 +21,7 @@ To see the Cut Chart API in action and review sample code, refer to these exampl
   - **Website:** Download [Hypertherm cut charts online](https://cutchartsapp.z20.web.core.windows.net/).
 
 ## Learn more about the API
-Find information about the following topics in the [Cut Chart API Support documentation](https://hypertherm.stoplight.io/docs/cutchart-api/docs/Home.md):
+Find information about the following topics in the [Cut Chart API Support documentation](https://hypertherm.stoplight.io):
  - custom cut charts and templates
  - authentication
  - API reference information
