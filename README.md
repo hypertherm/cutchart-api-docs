@@ -1,6 +1,6 @@
-# Hypertherm Cut Chart API
+# Hypertherm Cut Chart API (beta)
 
-Integrate the Hypertherm Cut Chart API into any application or CNC to give operators access to the latest Hypertherm cut charts. 
+Integrate the Hypertherm Cut Chart API (beta) into any application or CNC to give operators access to the latest Hypertherm cut charts. 
 
 Cut charts are available for XPR, MAXPRO200, and Powermax105.
 
