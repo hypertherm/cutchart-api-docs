@@ -12,7 +12,7 @@
   <Column name='cut_chart_type' omit='true'/><!--Omit an existing column.-->
   <Column name="disable_ahc" omit="true"/>
   <Column name="cut_chart_current_override" omit="true"/>
-  <Column name='kerf' width='10'><!--This modifies an existing column and change the width.-->
+  <Column name='kerf' width='10'><!--This modifies an existing column and changes the width.-->
     <Cell color='255,0,0'/><!--This sets the background color of all cells in the column. `Columnname` is not required because the name of the column element is automatically used.-->
   </Column>
   <Column name="thickness">
