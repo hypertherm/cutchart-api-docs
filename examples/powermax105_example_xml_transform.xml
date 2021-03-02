@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Document units='english'><!--If a template isn't supplied, a default template will be used. This sample XML file is intended to be used with the sample Powermax105 template.-->
+<Variables><!--This element contains string variables, including formulas, that can be used elsewhere.-->
+  <String name="red">255,0,0</String>
+  <String name="thicknessX2">{thickness}{row}*2</String>
+  <String name="thicknessX3">{thickness}{row}*3</String>
+</Variables>
+<References><!--This element contains row and cell elements that can be referenced elsewhere.-->
+  <Row name="baserow" color="$[red]" profile_type="*" diameter="*" feedrate_pct="100"/><!--This Row reference uses the variable "red" in its color attribute.-->
+  <Cell name="thicknessX2diameter" columnname="diameter" formula="true">$[thicknessX2]</Cell><!--This Cell reference uses the variable "thicknessX2" in its value.-->
+</References>
+  <Column name='cut_chart_type' omit='true'/><!--Omit an existing column.-->
+  <Column name="disable_ahc" omit="true"/>
+  <Column name="cut_chart_current_override" omit="true"/>
+  <Column name='kerf' width='10'><!--This modifies an existing column and changes the width.-->
+    <Cell color='255,0,0'/><!--This sets the background color of all cells in the column. `Columnname` is not required because the name of the column element is automatically used.-->
+  </Column>
+  <Column name="thickness">
+    <Cell dataformat="0.000"/><!--This assigns the data formatting string 0.000 to the entire thickness column.  Accepts normal Excel formatting syntax.-->
+  </Column>
+  <Column name="feedrate">
+    <Cell horizontalalignment="left"/><!--This aligns all values in the feedrate column to the left side.  Accepts normal Excel alignment options.-->
+  </Column>
+  <Column name="base_feedrate" header="Base FeedRate"/><!--This maps the "base_feedrate" database column to the Base FeedRate header in the template.-->
+  <Column name='diameter_feedrate'><!--This column will appear after all columns defined in the template because it is a custom column and has not been mapped to a header in the template.-->
+    <Cell formula='true'>{diameter}{row}*{base_feedrate}{row}</Cell><!--Accepts normal Excel syntax, except that columns need to be called out by name in {column_name} and current row number by {row}.-->
+  </Column>
+  <Record material='MS' thickness='*' class='65A Shielded Air'><!--This selects database record/s. Database records won't show up in Excel unless they are selected and have a row generated from them.-->
+    <Row profile_type='*' diameter='*' feedrate_pct='81' height='32'/><!--This generates a row based on the selected database record/s and changes row height.-->
+    <Row profile_type='I' diameter='*' feedrate_pct='74'/>
+  </Record>
+  <Record material='MS' thickness='*' class='105A Air'>
+    <Reference name="baserow"/><!--This marks one place where the Row reference named "baserow" will be used.-->
+    <Row profile_type='I' diameter='*' feedrate_pct='100'/>
+    <Row profile_type='H' diameter='2' feedrate_pct='100'>
+      <Cell columnname='feedrate_pct' color='178,173,127' 
+      note='This value is for reference only.'/><!--This sets the background color and adds a note to the cell in this row.-->
+    </Row>
+    <Row profile_type='H' diameter='1' feedrate_pct='100'>
+      <Cell columnname='feedrate_pct' color='178,173,127' note='This value is for reference only.'/>
+    </Row>
+  </Record>
+  <Record material='MS' thickness='*' class='85A Shielded Air'>
+    <Reference name="baserow"/><!--This marks one place where the Row reference named "baserow" will be used.-->
+    <Row profile_type='I' feedrate_pct='80'>
+      <Reference name="thicknessX2diameter"/><!--This marks one place where the Cell reference named "thicknessX2diameter" will be used.-->
+    </Row>
+    <Row profile_type='I' feedrate_pct='60'>
+      <Cell columnname="diameter" formula="true" color="$[red]">$[thicknessX3]</Cell><!--This Cell uses the variable "thicknessX3" as its value.-->
+    </Row>
+    <Row profile_type='I' feedrate_pct='40'/>
+  </Record>
+  <Record material='*' thickness='*' class='*'><!--This selects all database records that have not been selected yet.-->
+    <Reference name="baserow"/><!--This marks one place where the Row reference named "baserow" will be used.-->
+    <Row profile_type='I' diameter='5' feedrate_pct='80'/>
+    <Row profile_type='I' diameter='3' feedrate_pct='60' disable_ahc='true'/>
+    <Row profile_type='I' diameter='1' feedrate_pct='40' disable_ahc='true'/>
+  </Record>
+  <NamedRange columnname='kerf'>Kerf</NamedRange><!--This creates a named range containing the data cells of the kerf column, named "Kerf".  Only ranges based on a column are supported currently.-->
+  <ConditionalFormattingRules><!--This is a container for conditional formatting rules without attributes. It can only contain ConditionalFormattingRule elements.-->
+    <ConditionalFormattingRule formula='$B2>=0.5' apply_to='$A$2:$Y$225'><!--This formula contains the condition that activates the formatting. `apply_to` contains the area/cells that the formatting will apply to.-->
+      <!--available colors: Black, PaleBlue, Rose, Lavender, Tan, LightBlue, Aqua, Lime, Gold, LightOrange, Orange, BlueGrey, Grey40Percent, DarkTeal, SeaGreen, DarkGreen, OliveGreen, Brown, Plum, Indigo, Grey80Percent, Automatic, LightGreen, LightTurquoise, LightYellow, LightCornflowerBlue, White, Red, BrightGreen, Blue, Yellow, Pink, Turquoise, DarkRed, Green, SkyBlue, DarkYellow, DarkBlue, Teal, Grey25Percent, Grey50Percent, CornflowerBlue, Maroon, LemonChiffon, Orchid, Coral, RoyalBlue, Violet-->
+      <Font color='Red' height='10' bold='true' italic='false' /><!--font formatting-->
+      <Border color='Grey25Percent' style='Dotted'/><!--border formatting border styles are: None, Thin, Medium, Dashed, Dotted, Thick, Double, Hair,MediumDashed,DashDot,MediumDashDot, DashDotDot, MediumDashDotDot, SlantedDashDot-->
+      <Pattern color='LightYellow'/><!--background/foreground color-->
+    </ConditionalFormattingRule>
+  </ConditionalFormattingRules>
+</Document>
