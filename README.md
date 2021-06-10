@@ -2,7 +2,7 @@
 
 Integrate the Hypertherm Cut Chart API (beta) into any application or CNC to give operators access to the latest Hypertherm cut charts. 
 
-Cut charts are available for XPR, MAXPRO200, and Powermax105.
+Cut charts are available for XPR, MAXPRO2P00, Powermax45 XP, and Powermax105.
 
 ## Try out the API
 Not sure if you want to integrate the Cut Chart API with your client application? You can [try it out](https://hypertherm.stoplight.io/docs/cutchart-api/docs/Support/Try-the-API/About-trial-tools.md) before you decide.
